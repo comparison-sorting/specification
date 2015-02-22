@@ -1,24 +1,24 @@
-[js-sort](http://aureooms.github.io/js-sort)
+[js-in-situ-sort-spec](http://aureooms.github.io/js-in-situ-sort-spec)
 ==
 
 Sorting code bricks for JavaScript.
 
-[![NPM license](http://img.shields.io/npm/l/aureooms-js-sort.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-sort/master/LICENSE)
-[![NPM version](http://img.shields.io/npm/v/aureooms-js-sort.svg?style=flat)](https://www.npmjs.org/package/aureooms-js-sort)
-[![Bower version](http://img.shields.io/bower/v/aureooms-js-sort.svg?style=flat)](http://bower.io/search/?q=aureooms-js-sort)
-[![Build Status](http://img.shields.io/travis/aureooms/js-sort.svg?style=flat)](https://travis-ci.org/aureooms/js-sort)
-[![Coverage Status](http://img.shields.io/coveralls/aureooms/js-sort.svg?style=flat)](https://coveralls.io/r/aureooms/js-sort)
-[![Dependencies Status](http://img.shields.io/david/aureooms/js-sort.svg?style=flat)](https://david-dm.org/aureooms/js-sort#info=dependencies)
-[![devDependencies Status](http://img.shields.io/david/dev/aureooms/js-sort.svg?style=flat)](https://david-dm.org/aureooms/js-sort#info=devDependencies)
-[![Code Climate](http://img.shields.io/codeclimate/github/aureooms/js-sort.svg?style=flat)](https://codeclimate.com/github/aureooms/js-sort)
-[![NPM downloads per month](http://img.shields.io/npm/dm/aureooms-js-sort.svg?style=flat)](https://www.npmjs.org/package/aureooms-js-sort)
-[![GitHub issues](http://img.shields.io/github/issues/aureooms/js-sort.svg?style=flat)](https://github.com/aureooms/js-sort/issues)
+[![NPM license](http://img.shields.io/npm/l/aureooms-js-in-situ-sort-spec.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-in-situ-sort-spec/master/LICENSE)
+[![NPM version](http://img.shields.io/npm/v/aureooms-js-in-situ-sort-spec.svg?style=flat)](https://www.npmjs.org/package/aureooms-js-in-situ-sort-spec)
+[![Bower version](http://img.shields.io/bower/v/aureooms-js-in-situ-sort-spec.svg?style=flat)](http://bower.io/search/?q=aureooms-js-in-situ-sort-spec)
+[![Build Status](http://img.shields.io/travis/aureooms/js-in-situ-sort-spec.svg?style=flat)](https://travis-ci.org/aureooms/js-in-situ-sort-spec)
+[![Coverage Status](http://img.shields.io/coveralls/aureooms/js-in-situ-sort-spec.svg?style=flat)](https://coveralls.io/r/aureooms/js-in-situ-sort-spec)
+[![Dependencies Status](http://img.shields.io/david/aureooms/js-in-situ-sort-spec.svg?style=flat)](https://david-dm.org/aureooms/js-in-situ-sort-spec#info=dependencies)
+[![devDependencies Status](http://img.shields.io/david/dev/aureooms/js-in-situ-sort-spec.svg?style=flat)](https://david-dm.org/aureooms/js-in-situ-sort-spec#info=devDependencies)
+[![Code Climate](http://img.shields.io/codeclimate/github/aureooms/js-in-situ-sort-spec.svg?style=flat)](https://codeclimate.com/github/aureooms/js-in-situ-sort-spec)
+[![NPM downloads per month](http://img.shields.io/npm/dm/aureooms-js-in-situ-sort-spec.svg?style=flat)](https://www.npmjs.org/package/aureooms-js-in-situ-sort-spec)
+[![GitHub issues](http://img.shields.io/github/issues/aureooms/js-in-situ-sort-spec.svg?style=flat)](https://github.com/aureooms/js-in-situ-sort-spec/issues)
 
 Example usage:
 
 ```js
 compare = require( "aureooms-js-compare" ) ;
-sort = require( "aureooms-js-sort" ) ;
+sort = require( "aureooms-js-in-situ-sort-spec" ) ;
 
 /** quicksort using hoare partitioning */
 quicksort = sort.__quicksort__( sort.hoare ) ;
@@ -54,3 +54,5 @@ bubblesort = sort.bubblesort ;
 Reference:
 
   - https://kluedo.ub.uni-kl.de/frontdoor/index/index/docId/3463
+
+***( forked from [js-sort](https://github.com/aureooms/js-sort) )***

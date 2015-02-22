@@ -1,5 +1,5 @@
 {
-	"description": "sorting code bricks for JavaScript",
+	"description": "in place sorting code bricks for JavaScript",
 	"ignore": [
 		"js/index.js",
 		"js/src",
@@ -11,9 +11,9 @@
 		".gitignore",
 		"README.md"
 	],
-	"main": "js/dist/sort.js",
-	"name": "aureooms-js-sort",
+	"main": "js/dist/in-situ-sort-spec.js",
+	"name": "aureooms-js-in-situ-sort-spec",
 	"license": "AGPL-3.0",
-	"homepage": "http://aureooms.github.io/js-sort/",
+	"homepage": "http://aureooms.github.io/js-in-situ-sort-spec/",
 	"version": "4.0.0"
 }

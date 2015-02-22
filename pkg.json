@@ -1,10 +1,10 @@
 {
-	"name": "sort",
+	"name": "in-situ-sort-spec",
 	"code": {
 		"main": [
 			"js",
 			"dist",
-			"sort.js"
+			"in-situ-sort-spec.js"
 		],
 		"test": [
 			"test",

@@ -1,11 +1,11 @@
 {
-	"description": "sorting code bricks for JavaScript",
+	"description": "in place sorting code bricks for JavaScript",
 	"version": "4.0.0",
-	"repo": "aureooms/js-sort",
+	"repo": "aureooms/js-in-situ-sort-spec",
 	"scripts": [
-		"js/dist/sort.js"
+		"js/dist/in-situ-sort-spec.js"
 	],
-	"name": "aureooms-js-sort",
+	"name": "aureooms-js-in-situ-sort-spec",
 	"license": "AGPL-3.0",
-	"main": "js/dist/sort.js"
+	"main": "js/dist/in-situ-sort-spec.js"
 }
