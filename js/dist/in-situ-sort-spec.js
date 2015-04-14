@@ -3,124 +3,6 @@
 	'use strict';
 
 
-/* js/src/merge */
-/* js/src/merge/binarymerge.js */
-
-
-/**
- * Merges 2 arrays using the Hwang Lin algorithm.
- *
- *   /!\ aj - ai >= bj - bi
- */
-
-var __binarymerge__ = function ( binarysearch, copy ) {
-
-	var hwanglin = function ( compare, a, ai, aj, b, bi, bj, c, ci ) {
-
-		var o, t, x, y, q, d, z;
-
-		o = ci - ai - bi;
-		t = ai;
-
-		x = Math.pow( 2, Math.floor( Math.log( ( aj - ai ) / ( bj - bi ) ) ) );
-		y = Math.floor( ( aj - ai ) / x ) + 1;
-
-
-		while ( bi < bj && ( ai + x < aj || ( x = aj - ai - 1 ) ) ) {
-
-			t = ai;
-			ai = t + x;
-
-			while ( bi < bj ) {
-
-				if ( compare( b[bi], a[ai] ) >= 0 ) {
-					copy( a, t, ai, c, o + t + bi );
-					break;
-				}
-
-				q = binarysearch( compare, a, t, ai, b[bi] );
-				z = q[0] + q[1];
-
-				copy( a, t, z, c, o + t + bi );
-				c[o + z + bi] = b[bi];
-				t = z;
-				++bi;
-			}
-		}
-
-		copy( a, t, aj, c, o + t + bi );
-		copy( b, bi, bj, c, o + aj + bi );
-
-	};
-
-	return hwanglin;
-
-};
-
-exports.__binarymerge__ = __binarymerge__;
-
-/* js/src/merge/merge.js */
-
-
-var __merge__ = function ( index, copy ) {
-
-	var merge = function ( compare, a, ai, aj, b, bi, bj, c, ci ) {
-
-		var o, q, t;
-
-		o = ci - ai - bi;
-		t = ai;
-
-		for ( ; bi < bj ; ++bi ) {
-
-			q = index( compare, a, ai, aj, b[bi] );
-			ai = q[0] + q[1];
-
-			copy( a, t, ai, c, o + t + bi );
-
-			c[o + ai + bi] = b[bi];
-			t = ai;
-		}
-
-		copy( a, t, aj, c, o + t + bi );
-	};
-
-	return merge;
-
-};
-
-exports.__merge__ = __merge__;
-
-/* js/src/merge/tapemerge.js */
-
-
-var tapemerge = function ( compare , a , ai , aj , b , bi , bj , c , ci ) {
-
-	var cj ;
-
-	cj = ci + aj - ai + bj - bi ;
-
-	for ( ; ci < cj ; ++ci ) {
-
-		if ( bi >= bj || ( ai < aj && compare( a[ai] , b[bi] ) <= 0 ) ) {
-
-			c[ci] = a[ai] ;
-			++ai ;
-
-		}
-
-		else {
-
-			c[ci] = b[bi] ;
-			++bi ;
-
-		}
-	}
-
-};
-
-exports.tapemerge = tapemerge;
-
 /* js/src/partition */
 /* js/src/partition/hoare.js */
 
@@ -227,132 +109,84 @@ exports.lomuto = lomuto;
  * http://cs.stackexchange.com/a/24099/20711
  */
 
-var yaroslavskiy = function ( compare, a, i, j ) {
+var yaroslavskiy = function ( compare , a , i , j ) {
 
-	var p, q, g, k, l;
+	var p , q , g , k , l , t ;
 
-	--j;
+	--j ;
 
 	// Choose outermost elements as pivots
-	if ( compare( a[i], a[j] ) > 0 ) {
-		swap(a, i, j);
+	if ( compare( a[i] , a[j] ) > 0 ) {
+
+		t    = a[i] ;
+		a[i] = a[j] ;
+		a[j] =    t ;
+
 	}
 
-	p = a[i];
-	q = a[j];
+	p = a[i] ;
+	q = a[j] ;
 
 	// Partition a according to invariant below
-	l = i + 1;
-	g = j - 1;
-	k = l;
+	l = i + 1 ;
+	g = j - 1 ;
+	k = l ;
 
 	while ( k <= g ) {
 
-		if ( compare( p, a[k] ) > 0 ) {
+		if ( compare( p , a[k] ) > 0 ) {
 
-			swap( a, k, l );
-			++l;
+			t    = a[k] ;
+			a[k] = a[l] ;
+			a[l] =    t ;
+
+			++l ;
 
 		}
 
 		else if ( compare( q , a[k] ) <= 0 ) {
 
-			while ( compare ( a[g], q ) > 0 && k < g ) {
-				--g;
+			while ( compare ( a[g] , q ) > 0 && k < g ) {
+				--g ;
 			}
 
-			swap( a, k, g );
-			--g;
+			t    = a[k] ;
+			a[k] = a[g] ;
+			a[g] =    t ;
+			--g ;
 
 			if ( compare( p, a[k] ) > 0 ) {
 
-				swap( a, k, l );
-				++l;
+				t    = a[k] ;
+				a[k] = a[l] ;
+				a[l] =    t ;
+				++l ;
 
 			}
 
 		}
 
-		++k;
+		++k ;
 	}
 
-	--l;
-	++g;
+	--l ;
+	++g ;
 
 	// Swap pivots to final place
-	swap( a, i, l );
-	swap( a, j, g );
 
-	return [l, g];
+	t    = a[i] ;
+	a[i] = a[l] ;
+	a[l] =    t ;
 
-};
+	t    = a[j] ;
+	a[j] = a[g] ;
+	a[g] =    t ;
 
-exports.yaroslavskiy = yaroslavskiy;
+	return [ l , g ] ;
 
-/* js/src/select */
-/* js/src/select/multiselect.js */
+} ;
 
-
-var __multiselect__ = function ( partition, index ) {
-
-	/**
-	 * As long as partition and index are O(n) multiselect is O( n log n )
-	 * on average.
-	 */
-
-	var multiselect = function ( compare, a, ai, aj, b, bi, bj ) {
-
-		var p, q;
-
-		if ( aj - ai < 2 || bj - bi === 0 ) {
-			return;
-		}
-
-		p = partition( compare, a, ai, aj );
-		q = index( b, bi, bj, p );
-
-		multiselect( compare, a,    ai,  p,  b,          bi, q[1] );
-		multiselect( compare, a, p + 1, aj,  b, q[0] + q[1],   bj );
-	};
-
-	return multiselect;
-
-};
-
-exports.__multiselect__ = __multiselect__;
-
-/* js/src/select/quickselect.js */
-
-/**
- * Template for the recursive implementation of quickselect.
- *
- */
-
-var __quickselect__ = function ( partition ) {
-
-	var quickselect = function ( compare, a, i, j, k ) {
-
-		var p;
-
-		if (j - i < 2) {
-			return;
-		}
-
-		p = partition( compare, a, i, j );
-
-		if (k < p) {
-			quickselect( compare, a, i, p, k );
-		}
-		else if (k > p) {
-			quickselect( compare, a, p + 1, j, k );
-		}
-	};
-
-	return quickselect;
-
-};
-
-exports.__quickselect__ = __quickselect__;
+exports.yaroslavskiy = yaroslavskiy ;
 
 /* js/src/sort */
 /* js/src/sort/bubblesort.js */
@@ -575,170 +409,6 @@ var insertionsort = function ( compare, a, i, j ) {
 
 exports.insertionsort = insertionsort;
 
-/* js/src/sort/iterativemergesort.js */
-
-
-var iterativemergesort = function ( merge , copy ) {
-
-	/**
-	 * Always makes at most A001855(n) comparisons.
-	 *
-	 */
-
-	var mergesort = function ( compare , a , ai , aj , b , bi ) {
-
-		var whole , left , center , right , mask , half ;
-		var i , j , k ;
-		var t , u , v , w , p ;
-		var q , r , s ;
-		var c ;
-
-		whole = aj - ai ;
-
-		left = 0 ;
-		center = 2 ;
-		right = 0 ;
-
-		mask = 1 ;
-		half = 1 ;
-
-		while ( half < whole ) {
-
-			// assert  left < center
-			// assert right < center
-
-			if ( left === 0 ) {
-
-				// assert right = 0
-
-				t = u = v = w = p = 0 ;
-
-				j = whole ;
-				i = left = j & mask ;
-
-				q = ai ;
-				r = q + left ;
-				s = bi ;
-
-			}
-
-			else {
-
-				if ( right === 0 ) {
-
-					t = ai ;
-					u = ai + left ;
-					v = u ;
-					w = u + half ;
-					p = bi ;
-
-					left += half ;
-					i = left ;
-
-					right = ( whole - left ) & mask ;
-					j = whole - right ;
-
-					r = aj ;
-
-				}
-
-				else {
-
-					t = ai ;
-					u = ai + left ;
-					v = aj - right ;
-					w = aj ;
-					p = bi ;
-
-					i = left ;
-					left += right ;
-
-					j = whole - right ;
-					r = ai + j ;
-					right = ( whole - left ) & mask ;
-					j -= right ;
-
-				}
-
-				q = ai + j ;
-				s = bi + whole - right ;
-
-			}
-
-			merge( compare , a , t , u , a , v , w , b , p ) ;
-
-			copy( a , q , r , b , s ) ;
-
-			for ( k = i ; k < j ; k += center ) {
-
-				t = ai + k ;
-				u = t + half ;
-				v = t + center ;
-
-				merge( compare , a , t , u , a , u , v , b , bi + left + k - i ) ;
-
-			}
-
-			c = a ;
-			a = b ;
-			b = c ;
-
-			aj = bi + whole ;
-			bi = ai ;
-			ai = aj - whole ;
-
-			mask |= center ;
-			half <<= 1 ;
-			center <<= 1 ;
-
-		}
-
-		return a ;
-
-	} ;
-
-	return mergesort ;
-
-} ;
-
-exports.iterativemergesort = iterativemergesort ;
-
-/* js/src/sort/mergesort.js */
-
-
-var __mergesort__ = function ( merge ) {
-
-	/**
-	 * if n = 2^k then
-	 *    input is in a if k is odd
-	 *    input is in b if k is even
-	 * otherwise input is in both a and b
-	 * output is in b
-	 */
-
-	var mergesort = function ( compare , a , ai , aj , b , bi , bj ) {
-
-		var p ;
-
-		if ( aj - ai < 2 ) {
-			return ;
-		}
-
-		p = Math.floor( ( ai + aj ) / 2 ) ;
-
-		mergesort( compare , b , bi , bi + p - ai , a , ai , p ) ;
-		mergesort( compare , b , bi + p - ai , bj , a , p , aj ) ;
-
-		merge( compare , a , ai , p , a , p , aj , b , bi ) ;
-
-	} ;
-
-	return mergesort ;
-
-} ;
-
-exports.__mergesort__ = __mergesort__ ;
-
 /* js/src/sort/quicksort.js */
 
 
@@ -829,34 +499,29 @@ var selectionsort = function ( compare, a, i, j ) {
 
 exports.selectionsort = selectionsort;
 
-/* js/src/utils */
-/* js/src/utils/swap.js */
+/* js/src/test.js */
 
-var swap = function ( a, i, j ) {
+exports.test = function ( title , sort , compare , array , left , right , issorted , issame ) {
 
-	var t;
+	test( title , function ( ) {
 
-	t    = a[i];
-	a[i] = a[j];
-	a[j] = t;
+		var origin ;
 
-};
+		origin = new Array( array.length ) ;
+		copy( array , 0 , array.length , origin , 0 ) ;
 
-exports.swap = swap;
+		sort( compare , array , left , right ) ;
 
-/* js/src/utils/whole.js */
+		deepEqual( issorted( compare , array , left , right ) , right , "check sorted" ) ;
 
+		deepEqual( array.length , origin.length , "check length a" ) ;
 
-var whole = function ( sort ) {
+		deepEqual( issame( array , 0 , left , origin , 0 ) , left ) ;
 
-	return function ( compare, array ) {
+		deepEqual( issame( array , right , array.length , origin , right ) , array.length ) ;
 
-		sort( compare, array, 0, array.length );
+	} ) ;
 
-	};
-
-};
-
-exports.whole = whole;
+} ;
 
 })(typeof exports === 'undefined' ? this['insitu-sort-spec'] = {} : exports);
