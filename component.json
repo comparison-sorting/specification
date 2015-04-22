@@ -1,6 +1,6 @@
 {
 	"description": "in place sorting code bricks for JavaScript",
-	"version": "5.0.0",
+	"version": "5.0.1",
 	"repo": "aureooms/js-in-situ-sort-spec",
 	"scripts": [
 		"js/dist/in-situ-sort-spec.js"
