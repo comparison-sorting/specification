@@ -13,6 +13,7 @@ Sorting code bricks for JavaScript.
 [![Code Climate](http://img.shields.io/codeclimate/github/aureooms/js-in-situ-sort-spec.svg?style=flat)](https://codeclimate.com/github/aureooms/js-in-situ-sort-spec)
 [![NPM downloads per month](http://img.shields.io/npm/dm/aureooms-js-in-situ-sort-spec.svg?style=flat)](https://www.npmjs.org/package/aureooms-js-in-situ-sort-spec)
 [![GitHub issues](http://img.shields.io/github/issues/aureooms/js-in-situ-sort-spec.svg?style=flat)](https://github.com/aureooms/js-in-situ-sort-spec/issues)
+[![Inline docs](http://inch-ci.org/github/aureooms/js-in-situ-sort-spec.svg?branch=master&style=shields)](http://inch-ci.org/github/aureooms/js-in-situ-sort-spec)
 
 Example usage:
 
