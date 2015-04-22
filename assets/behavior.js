@@ -24,76 +24,6 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
     }, {
       "type": "folder",
       "data": {
-        "path": "merge",
-        "title": "merge"
-      },
-      "depth": 1,
-      "children": [
-        {
-          "type": "file",
-          "data": {
-            "language": {
-              "nameMatchers": [".js"],
-              "pygmentsLexer": "javascript",
-              "multiLineComment": ["/*", "*", "*/"],
-              "singleLineComment": ["//"],
-              "ignorePrefix": "}",
-              "foldPrefix": "^",
-              "name": "JavaScript"
-            },
-            "sourcePath": "/home/aureooms/dev/js/js-in-situ-sort-spec/js/src/merge/binarymerge.js",
-            "projectPath": "js/src/merge/binarymerge.js",
-            "targetPath": "merge/binarymerge",
-            "pageTitle": "merge/binarymerge",
-            "title": "binarymerge"
-          },
-          "depth": 2,
-          "outline": []
-        }, {
-          "type": "file",
-          "data": {
-            "language": {
-              "nameMatchers": [".js"],
-              "pygmentsLexer": "javascript",
-              "multiLineComment": ["/*", "*", "*/"],
-              "singleLineComment": ["//"],
-              "ignorePrefix": "}",
-              "foldPrefix": "^",
-              "name": "JavaScript"
-            },
-            "sourcePath": "/home/aureooms/dev/js/js-in-situ-sort-spec/js/src/merge/merge.js",
-            "projectPath": "js/src/merge/merge.js",
-            "targetPath": "merge/merge",
-            "pageTitle": "merge/merge",
-            "title": "merge"
-          },
-          "depth": 2,
-          "outline": []
-        }, {
-          "type": "file",
-          "data": {
-            "language": {
-              "nameMatchers": [".js"],
-              "pygmentsLexer": "javascript",
-              "multiLineComment": ["/*", "*", "*/"],
-              "singleLineComment": ["//"],
-              "ignorePrefix": "}",
-              "foldPrefix": "^",
-              "name": "JavaScript"
-            },
-            "sourcePath": "/home/aureooms/dev/js/js-in-situ-sort-spec/js/src/merge/tapemerge.js",
-            "projectPath": "js/src/merge/tapemerge.js",
-            "targetPath": "merge/tapemerge",
-            "pageTitle": "merge/tapemerge",
-            "title": "tapemerge"
-          },
-          "depth": 2,
-          "outline": []
-        }
-      ]
-    }, {
-      "type": "folder",
-      "data": {
         "path": "partition",
         "title": "partition"
       },
@@ -156,56 +86,6 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
             "targetPath": "partition/yaroslavskiy",
             "pageTitle": "partition/yaroslavskiy",
             "title": "yaroslavskiy"
-          },
-          "depth": 2,
-          "outline": []
-        }
-      ]
-    }, {
-      "type": "folder",
-      "data": {
-        "path": "select",
-        "title": "select"
-      },
-      "depth": 1,
-      "children": [
-        {
-          "type": "file",
-          "data": {
-            "language": {
-              "nameMatchers": [".js"],
-              "pygmentsLexer": "javascript",
-              "multiLineComment": ["/*", "*", "*/"],
-              "singleLineComment": ["//"],
-              "ignorePrefix": "}",
-              "foldPrefix": "^",
-              "name": "JavaScript"
-            },
-            "sourcePath": "/home/aureooms/dev/js/js-in-situ-sort-spec/js/src/select/multiselect.js",
-            "projectPath": "js/src/select/multiselect.js",
-            "targetPath": "select/multiselect",
-            "pageTitle": "select/multiselect",
-            "title": "multiselect"
-          },
-          "depth": 2,
-          "outline": []
-        }, {
-          "type": "file",
-          "data": {
-            "language": {
-              "nameMatchers": [".js"],
-              "pygmentsLexer": "javascript",
-              "multiLineComment": ["/*", "*", "*/"],
-              "singleLineComment": ["//"],
-              "ignorePrefix": "}",
-              "foldPrefix": "^",
-              "name": "JavaScript"
-            },
-            "sourcePath": "/home/aureooms/dev/js/js-in-situ-sort-spec/js/src/select/quickselect.js",
-            "projectPath": "js/src/select/quickselect.js",
-            "targetPath": "select/quickselect",
-            "pageTitle": "select/quickselect",
-            "title": "quickselect"
           },
           "depth": 2,
           "outline": []
@@ -311,46 +191,6 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
               "foldPrefix": "^",
               "name": "JavaScript"
             },
-            "sourcePath": "/home/aureooms/dev/js/js-in-situ-sort-spec/js/src/sort/iterativemergesort.js",
-            "projectPath": "js/src/sort/iterativemergesort.js",
-            "targetPath": "sort/iterativemergesort",
-            "pageTitle": "sort/iterativemergesort",
-            "title": "iterativemergesort"
-          },
-          "depth": 2,
-          "outline": []
-        }, {
-          "type": "file",
-          "data": {
-            "language": {
-              "nameMatchers": [".js"],
-              "pygmentsLexer": "javascript",
-              "multiLineComment": ["/*", "*", "*/"],
-              "singleLineComment": ["//"],
-              "ignorePrefix": "}",
-              "foldPrefix": "^",
-              "name": "JavaScript"
-            },
-            "sourcePath": "/home/aureooms/dev/js/js-in-situ-sort-spec/js/src/sort/mergesort.js",
-            "projectPath": "js/src/sort/mergesort.js",
-            "targetPath": "sort/mergesort",
-            "pageTitle": "sort/mergesort",
-            "title": "mergesort"
-          },
-          "depth": 2,
-          "outline": []
-        }, {
-          "type": "file",
-          "data": {
-            "language": {
-              "nameMatchers": [".js"],
-              "pygmentsLexer": "javascript",
-              "multiLineComment": ["/*", "*", "*/"],
-              "singleLineComment": ["//"],
-              "ignorePrefix": "}",
-              "foldPrefix": "^",
-              "name": "JavaScript"
-            },
             "sourcePath": "/home/aureooms/dev/js/js-in-situ-sort-spec/js/src/sort/quicksort.js",
             "projectPath": "js/src/sort/quicksort.js",
             "targetPath": "sort/quicksort",
@@ -382,55 +222,25 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
         }
       ]
     }, {
-      "type": "folder",
+      "type": "file",
       "data": {
-        "path": "utils",
-        "title": "utils"
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/aureooms/dev/js/js-in-situ-sort-spec/js/src/test.js",
+        "projectPath": "js/src/test.js",
+        "targetPath": "test",
+        "pageTitle": "test",
+        "title": "test"
       },
       "depth": 1,
-      "children": [
-        {
-          "type": "file",
-          "data": {
-            "language": {
-              "nameMatchers": [".js"],
-              "pygmentsLexer": "javascript",
-              "multiLineComment": ["/*", "*", "*/"],
-              "singleLineComment": ["//"],
-              "ignorePrefix": "}",
-              "foldPrefix": "^",
-              "name": "JavaScript"
-            },
-            "sourcePath": "/home/aureooms/dev/js/js-in-situ-sort-spec/js/src/utils/swap.js",
-            "projectPath": "js/src/utils/swap.js",
-            "targetPath": "utils/swap",
-            "pageTitle": "utils/swap",
-            "title": "swap"
-          },
-          "depth": 2,
-          "outline": []
-        }, {
-          "type": "file",
-          "data": {
-            "language": {
-              "nameMatchers": [".js"],
-              "pygmentsLexer": "javascript",
-              "multiLineComment": ["/*", "*", "*/"],
-              "singleLineComment": ["//"],
-              "ignorePrefix": "}",
-              "foldPrefix": "^",
-              "name": "JavaScript"
-            },
-            "sourcePath": "/home/aureooms/dev/js/js-in-situ-sort-spec/js/src/utils/whole.js",
-            "projectPath": "js/src/utils/whole.js",
-            "targetPath": "utils/whole",
-            "pageTitle": "utils/whole",
-            "title": "whole"
-          },
-          "depth": 2,
-          "outline": []
-        }
-      ]
+      "outline": []
     }
   ];
 

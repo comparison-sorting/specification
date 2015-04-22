@@ -1,0 +1,22 @@
+<!DOCTYPE html><html lang="en"><head><title>test</title></head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"><meta name="groc-relative-root" content=""><meta name="groc-document-path" content="test"><meta name="groc-project-path" content="js/src/test.js"><meta name="groc-github-url" content="https://github.com/aureooms/js-in-situ-sort-spec"><link rel="stylesheet" type="text/css" media="all" href="assets/style.css"><script type="text/javascript" src="assets/behavior.js"></script><body><div id="meta"><div class="file-path"><a href="https://github.com/aureooms/js-in-situ-sort-spec/blob/master/js/src/test.js">js/src/test.js</a></div></div><div id="document"><div class="segment"><div class="code"><div class="wrapper">exports.test = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">( title , sort , compare , array , left , right , issorted , issame )</span> </span>{
+
+	test( title , <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">( )</span> </span>{
+
+		<span class="hljs-keyword">var</span> origin ;
+
+		origin = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Array</span>( array.length ) ;
+		copy( array , <span class="hljs-number">0</span> , array.length , origin , <span class="hljs-number">0</span> ) ;
+
+		sort( compare , array , left , right ) ;
+
+		deepEqual( issorted( compare , array , left , right ) , right , <span class="hljs-string">"check sorted"</span> ) ;
+
+		deepEqual( array.length , origin.length , <span class="hljs-string">"check length a"</span> ) ;
+
+		deepEqual( issame( array , <span class="hljs-number">0</span> , left , origin , <span class="hljs-number">0</span> ) , left ) ;
+
+		deepEqual( issame( array , right , array.length , origin , right ) , array.length ) ;
+
+	} ) ;
+
+} ;</div></div></div></div></body></html>
