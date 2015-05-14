@@ -20,207 +20,37 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
         "title": "index"
       },
       "depth": 1,
+      "outline": [
+        {
+          "type": "heading",
+          "data": {
+            "level": 2,
+            "title": "Use",
+            "slug": "use"
+          },
+          "depth": 2
+        }
+      ]
+    }, {
+      "type": "file",
+      "data": {
+        "language": {
+          "nameMatchers": [".js"],
+          "pygmentsLexer": "javascript",
+          "multiLineComment": ["/*", "*", "*/"],
+          "singleLineComment": ["//"],
+          "ignorePrefix": "}",
+          "foldPrefix": "^",
+          "name": "JavaScript"
+        },
+        "sourcePath": "/home/aureooms/dev/js/js-in-situ-sort-spec/js/src/native.js",
+        "projectPath": "js/src/native.js",
+        "targetPath": "native",
+        "pageTitle": "native",
+        "title": "native"
+      },
+      "depth": 1,
       "outline": []
-    }, {
-      "type": "folder",
-      "data": {
-        "path": "partition",
-        "title": "partition"
-      },
-      "depth": 1,
-      "children": [
-        {
-          "type": "file",
-          "data": {
-            "language": {
-              "nameMatchers": [".js"],
-              "pygmentsLexer": "javascript",
-              "multiLineComment": ["/*", "*", "*/"],
-              "singleLineComment": ["//"],
-              "ignorePrefix": "}",
-              "foldPrefix": "^",
-              "name": "JavaScript"
-            },
-            "sourcePath": "/home/aureooms/dev/js/js-in-situ-sort-spec/js/src/partition/hoare.js",
-            "projectPath": "js/src/partition/hoare.js",
-            "targetPath": "partition/hoare",
-            "pageTitle": "partition/hoare",
-            "title": "hoare"
-          },
-          "depth": 2,
-          "outline": []
-        }, {
-          "type": "file",
-          "data": {
-            "language": {
-              "nameMatchers": [".js"],
-              "pygmentsLexer": "javascript",
-              "multiLineComment": ["/*", "*", "*/"],
-              "singleLineComment": ["//"],
-              "ignorePrefix": "}",
-              "foldPrefix": "^",
-              "name": "JavaScript"
-            },
-            "sourcePath": "/home/aureooms/dev/js/js-in-situ-sort-spec/js/src/partition/lomuto.js",
-            "projectPath": "js/src/partition/lomuto.js",
-            "targetPath": "partition/lomuto",
-            "pageTitle": "partition/lomuto",
-            "title": "lomuto"
-          },
-          "depth": 2,
-          "outline": []
-        }, {
-          "type": "file",
-          "data": {
-            "language": {
-              "nameMatchers": [".js"],
-              "pygmentsLexer": "javascript",
-              "multiLineComment": ["/*", "*", "*/"],
-              "singleLineComment": ["//"],
-              "ignorePrefix": "}",
-              "foldPrefix": "^",
-              "name": "JavaScript"
-            },
-            "sourcePath": "/home/aureooms/dev/js/js-in-situ-sort-spec/js/src/partition/yaroslavskiy.js",
-            "projectPath": "js/src/partition/yaroslavskiy.js",
-            "targetPath": "partition/yaroslavskiy",
-            "pageTitle": "partition/yaroslavskiy",
-            "title": "yaroslavskiy"
-          },
-          "depth": 2,
-          "outline": []
-        }
-      ]
-    }, {
-      "type": "folder",
-      "data": {
-        "path": "sort",
-        "title": "sort"
-      },
-      "depth": 1,
-      "children": [
-        {
-          "type": "file",
-          "data": {
-            "language": {
-              "nameMatchers": [".js"],
-              "pygmentsLexer": "javascript",
-              "multiLineComment": ["/*", "*", "*/"],
-              "singleLineComment": ["//"],
-              "ignorePrefix": "}",
-              "foldPrefix": "^",
-              "name": "JavaScript"
-            },
-            "sourcePath": "/home/aureooms/dev/js/js-in-situ-sort-spec/js/src/sort/bubblesort.js",
-            "projectPath": "js/src/sort/bubblesort.js",
-            "targetPath": "sort/bubblesort",
-            "pageTitle": "sort/bubblesort",
-            "title": "bubblesort"
-          },
-          "depth": 2,
-          "outline": []
-        }, {
-          "type": "file",
-          "data": {
-            "language": {
-              "nameMatchers": [".js"],
-              "pygmentsLexer": "javascript",
-              "multiLineComment": ["/*", "*", "*/"],
-              "singleLineComment": ["//"],
-              "ignorePrefix": "}",
-              "foldPrefix": "^",
-              "name": "JavaScript"
-            },
-            "sourcePath": "/home/aureooms/dev/js/js-in-situ-sort-spec/js/src/sort/dualpivotquicksort.js",
-            "projectPath": "js/src/sort/dualpivotquicksort.js",
-            "targetPath": "sort/dualpivotquicksort",
-            "pageTitle": "sort/dualpivotquicksort",
-            "title": "dualpivotquicksort"
-          },
-          "depth": 2,
-          "outline": []
-        }, {
-          "type": "file",
-          "data": {
-            "language": {
-              "nameMatchers": [".js"],
-              "pygmentsLexer": "javascript",
-              "multiLineComment": ["/*", "*", "*/"],
-              "singleLineComment": ["//"],
-              "ignorePrefix": "}",
-              "foldPrefix": "^",
-              "name": "JavaScript"
-            },
-            "sourcePath": "/home/aureooms/dev/js/js-in-situ-sort-spec/js/src/sort/heapsort.js",
-            "projectPath": "js/src/sort/heapsort.js",
-            "targetPath": "sort/heapsort",
-            "pageTitle": "sort/heapsort",
-            "title": "heapsort"
-          },
-          "depth": 2,
-          "outline": []
-        }, {
-          "type": "file",
-          "data": {
-            "language": {
-              "nameMatchers": [".js"],
-              "pygmentsLexer": "javascript",
-              "multiLineComment": ["/*", "*", "*/"],
-              "singleLineComment": ["//"],
-              "ignorePrefix": "}",
-              "foldPrefix": "^",
-              "name": "JavaScript"
-            },
-            "sourcePath": "/home/aureooms/dev/js/js-in-situ-sort-spec/js/src/sort/insertionsort.js",
-            "projectPath": "js/src/sort/insertionsort.js",
-            "targetPath": "sort/insertionsort",
-            "pageTitle": "sort/insertionsort",
-            "title": "insertionsort"
-          },
-          "depth": 2,
-          "outline": []
-        }, {
-          "type": "file",
-          "data": {
-            "language": {
-              "nameMatchers": [".js"],
-              "pygmentsLexer": "javascript",
-              "multiLineComment": ["/*", "*", "*/"],
-              "singleLineComment": ["//"],
-              "ignorePrefix": "}",
-              "foldPrefix": "^",
-              "name": "JavaScript"
-            },
-            "sourcePath": "/home/aureooms/dev/js/js-in-situ-sort-spec/js/src/sort/quicksort.js",
-            "projectPath": "js/src/sort/quicksort.js",
-            "targetPath": "sort/quicksort",
-            "pageTitle": "sort/quicksort",
-            "title": "quicksort"
-          },
-          "depth": 2,
-          "outline": []
-        }, {
-          "type": "file",
-          "data": {
-            "language": {
-              "nameMatchers": [".js"],
-              "pygmentsLexer": "javascript",
-              "multiLineComment": ["/*", "*", "*/"],
-              "singleLineComment": ["//"],
-              "ignorePrefix": "}",
-              "foldPrefix": "^",
-              "name": "JavaScript"
-            },
-            "sourcePath": "/home/aureooms/dev/js/js-in-situ-sort-spec/js/src/sort/selectionsort.js",
-            "projectPath": "js/src/sort/selectionsort.js",
-            "targetPath": "sort/selectionsort",
-            "pageTitle": "sort/selectionsort",
-            "title": "selectionsort"
-          },
-          "depth": 2,
-          "outline": []
-        }
-      ]
     }, {
       "type": "file",
       "data": {
