@@ -1,39 +1,41 @@
 {
-	"author": "aureooms",
-	"scripts": {
-		"doc": "./node_modules/.bin/groc",
-		"build": "./node_modules/.bin/aureooms-node-package-build",
-		"test": "./node_modules/.bin/aureooms-node-package-test"
-	},
-	"devDependencies": {
-		"aureooms-node-package": "^2.0.3",
-		"aureooms-js-itertools": "^0.2.0",
-		"aureooms-js-functools": "^1.0.0",
-		"aureooms-js-compare": "^1.4.1",
-		"aureooms-js-random": "^0.0.4",
-		"aureooms-js-search": "^0.0.3",
-		"aureooms-js-array": "^2.0.2"
-	},
-	"main": "js/dist/in-situ-sort-spec.js",
-	"bugs": {
-		"url": "https://github.com/aureooms/js-in-situ-sort-spec/issues"
-	},
-	"license": "AGPL-3.0",
-	"homepage": "http://aureooms.github.io/js-in-situ-sort-spec/",
-	"description": "in place sorting code bricks for JavaScript",
-	"dependencies": {},
-	"keywords": [
-		"bricks",
-		"in situ",
-		"javascript",
-		"js",
-		"sorting",
-		"specification"
-	],
-	"name": "aureooms-js-in-situ-sort-spec",
-	"repository": {
-		"url": "https://github.com/aureooms/js-in-situ-sort-spec.git",
-		"type": "git"
-	},
-	"version": "5.0.1"
+  "author": "aureooms",
+  "scripts": {
+    "doc": "./node_modules/.bin/groc",
+    "build": "./node_modules/.bin/aureooms-node-package-build",
+    "test": "./node_modules/.bin/aureooms-node-package-test"
+  },
+  "devDependencies": {
+    "aureooms-node-package": "^4.2.5"
+  },
+  "main": "js/dist/in-situ-sort-spec.js",
+  "bugs": {
+    "url": "https://github.com/aureooms/js-in-situ-sort-spec/issues"
+  },
+  "license": "AGPL-3.0",
+  "homepage": "http://aureooms.github.io/js-in-situ-sort-spec/",
+  "description": "in place sorting code bricks for JavaScript",
+  "dependencies": {
+    "aureooms-js-array": "^2.2.0",
+    "aureooms-js-compare": "^1.4.3",
+    "aureooms-js-functools": "^2.0.3",
+    "aureooms-js-itertools": "^1.1.1",
+    "aureooms-js-random": "^1.0.1",
+    "aureooms-js-search": "^0.0.4",
+    "aureooms-js-sort": "^5.0.4"
+  },
+  "keywords": [
+    "bricks",
+    "in situ",
+    "javascript",
+    "js",
+    "sorting",
+    "specification"
+  ],
+  "name": "aureooms-js-in-situ-sort-spec",
+  "repository": {
+    "url": "https://github.com/aureooms/js-in-situ-sort-spec.git",
+    "type": "git"
+  },
+  "version": "5.0.1"
 }

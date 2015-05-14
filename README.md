@@ -1,7 +1,7 @@
 [js-in-situ-sort-spec](http://aureooms.github.io/js-in-situ-sort-spec)
 ==
 
-Sorting code bricks for JavaScript.
+In place sorting specification for JavaScript. Currently only supports NPM.
 
 [![NPM license](http://img.shields.io/npm/l/aureooms-js-in-situ-sort-spec.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-in-situ-sort-spec/master/LICENSE)
 [![NPM version](http://img.shields.io/npm/v/aureooms-js-in-situ-sort-spec.svg?style=flat)](https://www.npmjs.org/package/aureooms-js-in-situ-sort-spec)
@@ -15,45 +15,30 @@ Sorting code bricks for JavaScript.
 [![GitHub issues](http://img.shields.io/github/issues/aureooms/js-in-situ-sort-spec.svg?style=flat)](https://github.com/aureooms/js-in-situ-sort-spec/issues)
 [![Inline docs](http://inch-ci.org/github/aureooms/js-in-situ-sort-spec.svg?branch=master&style=shields)](http://inch-ci.org/github/aureooms/js-in-situ-sort-spec)
 
-Example usage:
+## Use
 
 ```js
-compare = require( "aureooms-js-compare" ) ;
-sort = require( "aureooms-js-in-situ-sort-spec" ) ;
+sort = require( "aureooms-js-sort" ) ;
+array = require( "aureooms-js-array" ) ;
+search = require( "aureooms-js-search" ) ;
+insitusortspec = require( "aureooms-js-in-situ-sort-spec" ) ;
 
-/** quicksort using hoare partitioning */
-quicksort = sort.__quicksort__( sort.hoare ) ;
+insitusortspec.test(
+	[ "heapsort (unary)", sort.__heapsort__( 1 ) ],
+	[ "heapsort (binary)", sort.__heapsort__( 2 ) ],
+	[ "heapsort (ternary)", sort.__heapsort__( 3 ) ],
+	[ "heapsort (4-ary)", sort.__heapsort__( 4 ) ],
+	[ "heapsort (5-ary)", sort.__heapsort__( 5 ) ],
+	[ "quicksort (hoare)", sort.__quicksort__( sort.hoare ) ],
+	[ "quicksort (lomuto)", sort.__quicksort__( sort.lomuto ) ],
+	[ "dualpivotquicksort (yaroslavskiy)", sort.__dualpivotquicksort__( sort.yaroslavskiy ) ],
+	[ "insertionsort", sort.insertionsort ],
+	[ "selectionsort", sort.selectionsort ],
+	[ "bubblesort", sort.bubblesort ],
+	[ "fordjohnson" , function ( compare , a , i , j ) {
 
-a = [ 1 , 6 , 5 , 3 , 2 , 4 ] ;
+		sort._fordjohnson( search.binarysearch )( compare , array.swap , a , i , j ) ;
 
-quicksort( compare.increasing , a , 0 , a.length ) ;
-
-a ; // [ 1 , 2 , 3 , 4 , 5 , 6 ]
-
-quicksort( compare.decreasing , a , 0 , a.length ) ;
-
-a ; // [ 6 , 5 , 4 , 3 , 2 , 1 ]
-
-// but also
-
-/** binary heapsort */
-heapsort = sort.__heapsort__( 2 ) ;
-/** ternary heapsort */
-heapsort = sort.__heapsort__( 3 ) ;
-/** quicksort (lomuto) */
-quicksort = sort.__quicksort__( sort.lomuto ) ;
-/** dualpivotquicksort (yaroslavskiy) */
-quicksort = sort.__dualpivotquicksort__( sort.yaroslavskiy ) ;
-/** insertionsort */
-insertionsort = sort.insertionsort ;
-/** selectionsort */
-selectionsort = sort.selectionsort ;
-/** bubblesort */
-bubblesort = sort.bubblesort ;
+	} ]
+) ;
 ```
-
-Reference:
-
-  - https://kluedo.ub.uni-kl.de/frontdoor/index/index/docId/3463
-
-***( forked from [js-sort](https://github.com/aureooms/js-sort) )***
