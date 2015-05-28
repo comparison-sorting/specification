@@ -6,17 +6,15 @@
 
 	var definition = function definition(exports, undefined) {
 
-		/* js/src/native.js */
+		/* js/src/NativeSort.js */
 
-		exports.native = function (compare, a, i, j) {
+		exports.NativeSort = function (compare, a, i, j) {
 
 			var x = Array.prototype.slice.call(a, i, j);
 
 			x.sort(compare);
 
-			x.unshift(i, j - i);
-
-			Array.prototype.splice.apply(a, x);
+			while (j-- > i) a[j] = x[j - i];
 		};
 
 		/* js/src/test.js */

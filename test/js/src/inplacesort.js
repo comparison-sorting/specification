@@ -1,2 +1,2 @@
 
-insitusortspec.test( [ [ "native" , insitusortspec.native ] ] ) ;
+insitusortspec.test( [ [ "native" , insitusortspec.NativeSort ] ] ) ;
