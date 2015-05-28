@@ -43,11 +43,11 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
           "foldPrefix": "^",
           "name": "JavaScript"
         },
-        "sourcePath": "/home/aureooms/dev/js/js-in-situ-sort-spec/js/src/native.js",
-        "projectPath": "js/src/native.js",
-        "targetPath": "native",
-        "pageTitle": "native",
-        "title": "native"
+        "sourcePath": "/home/aureooms/dev/js/js-in-situ-sort-spec/js/src/NativeSort.js",
+        "projectPath": "js/src/NativeSort.js",
+        "targetPath": "NativeSort",
+        "pageTitle": "NativeSort",
+        "title": "NativeSort"
       },
       "depth": 1,
       "outline": []

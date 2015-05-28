@@ -1,0 +1,9 @@
+<!DOCTYPE html><html lang="en"><head><title>NativeSort</title></head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"><meta name="groc-relative-root" content=""><meta name="groc-document-path" content="NativeSort"><meta name="groc-project-path" content="js/src/NativeSort.js"><meta name="groc-github-url" content="https://github.com/aureooms/js-in-situ-sort-spec"><link rel="stylesheet" type="text/css" media="all" href="assets/style.css"><script type="text/javascript" src="assets/behavior.js"></script><body><div id="meta"><div class="file-path"><a href="https://github.com/aureooms/js-in-situ-sort-spec/blob/master/js/src/NativeSort.js">js/src/NativeSort.js</a></div></div><div id="document"><div class="segment"><div class="code"><div class="wrapper">exports.NativeSort = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">( compare , a , i , j )</span> </span>{
+
+	<span class="hljs-keyword">var</span> x = <span class="hljs-built_in">Array</span>.prototype.slice.call( a , i , j ) ;
+
+	x.sort( compare ) ;
+
+	<span class="hljs-keyword">while</span> ( j --&gt; i ) a[j] = x[j-i] ;
+
+} ;</div></div></div></div></body></html>
