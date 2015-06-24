@@ -23,7 +23,7 @@ array = require( "aureooms-js-array" ) ;
 search = require( "aureooms-js-search" ) ;
 insitusortspec = require( "aureooms-js-in-situ-sort-spec" ) ;
 
-insitusortspec.test(
+insitusortspec.test( [
 	[ "heapsort (unary)", sort.__heapsort__( 1 ) ],
 	[ "heapsort (binary)", sort.__heapsort__( 2 ) ],
 	[ "heapsort (ternary)", sort.__heapsort__( 3 ) ],
@@ -40,5 +40,5 @@ insitusortspec.test(
 		sort._fordjohnson( search.binarysearch )( compare , array.swap , a , i , j ) ;
 
 	} ]
-) ;
+] ) ;
 ```
