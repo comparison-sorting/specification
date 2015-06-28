@@ -1,7 +1,8 @@
 [js-in-situ-sort-spec](http://aureooms.github.io/js-in-situ-sort-spec)
 ==
 
-In place sorting specification for JavaScript. Currently only supports NPM.
+In place sorting specification for JavaScript. Currently only supports NPM. Parent is
+[aureooms/js-sort](https://github.com/aureooms/js-sort).
 
 [![NPM license](http://img.shields.io/npm/l/aureooms-js-in-situ-sort-spec.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-in-situ-sort-spec/master/LICENSE)
 [![NPM version](http://img.shields.io/npm/v/aureooms-js-in-situ-sort-spec.svg?style=flat)](https://www.npmjs.org/package/aureooms-js-in-situ-sort-spec)
