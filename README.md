@@ -18,20 +18,23 @@ In place sorting specification for JavaScript. Currently only supports NPM.
 ## Use
 
 ```js
-sort = require( "aureooms-js-sort" ) ;
-array = require( "aureooms-js-array" ) ;
-search = require( "aureooms-js-search" ) ;
-insitusortspec = require( "aureooms-js-in-situ-sort-spec" ) ;
+let sort = require( "aureooms-js-sort" ) ;
+let array = require( "aureooms-js-array" ) ;
+let search = require( "aureooms-js-search" ) ;
+let heapsort = require( "aureooms-js-heapsort" ) ;
+let quicksort = require( "aureooms-js-quicksort" ) ;
+let partition = require( "aureooms-js-partition" ) ;
+let insitusortspec = require( "aureooms-js-in-situ-sort-spec" ) ;
 
 insitusortspec.test( [
-	[ "heapsort (unary)", sort.__heapsort__( 1 ) ],
-	[ "heapsort (binary)", sort.__heapsort__( 2 ) ],
-	[ "heapsort (ternary)", sort.__heapsort__( 3 ) ],
-	[ "heapsort (4-ary)", sort.__heapsort__( 4 ) ],
-	[ "heapsort (5-ary)", sort.__heapsort__( 5 ) ],
-	[ "quicksort (hoare)", sort.__quicksort__( sort.hoare ) ],
-	[ "quicksort (lomuto)", sort.__quicksort__( sort.lomuto ) ],
-	[ "dualpivotquicksort (yaroslavskiy)", sort.__dualpivotquicksort__( sort.yaroslavskiy ) ],
+	[ "heapsort (unary)", heapsort.dary( 1 ) ],
+	[ "heapsort (binary)", heapsort.dary( 2 ) ],
+	[ "heapsort (ternary)", heapsort.dary( 3 ) ],
+	[ "heapsort (4-ary)", heapsort.dary( 4 ) ],
+	[ "heapsort (5-ary)", heapsort.dary( 5 ) ],
+	[ "quicksort (hoare)", quicksort.single( partition.hoare ) ],
+	[ "quicksort (lomuto)", quicksort.single( partition.lomuto ) ],
+	[ "dualpivotquicksort (yaroslavskiy)", quicksort.dual( partition.yaroslavskiy ) ],
 	[ "insertionsort", sort.insertionsort ],
 	[ "selectionsort", sort.selectionsort ],
 	[ "bubblesort", sort.bubblesort ],
