@@ -1,13 +1,13 @@
 ```js
 import ava from 'ava' ;
 
-import sort from "aureooms-js-sort" ;
-import array from "aureooms-js-array" ;
-import search from "aureooms-js-search" ;
-import heapsort from "aureooms-js-heapsort" ;
-import quicksort from "aureooms-js-quicksort" ;
-import partition from "aureooms-js-partition" ;
-import insitusortspec from "aureooms-js-in-situ-sort-spec" ;
+import sort from "@aureooms/js-sort" ;
+import array from "@aureooms/js-array" ;
+import search from "@aureooms/js-search" ;
+import heapsort from "@aureooms/js-heapsort" ;
+import quicksort from "@aureooms/js-quicksort" ;
+import partition from "@aureooms/js-partition" ;
+import insitusortspec from "@aureooms/js-in-situ-sort-spec" ;
 
 insitusortspec.test( ava , [
 	[ "heapsort (unary)", heapsort.dary( 1 ) ],

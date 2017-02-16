@@ -8,7 +8,7 @@ import 'babel-polyfill' ;
 
 Then
 ```js
-const measure = require( 'aureooms-js-in-situ-sort-spec' ) ;
+const measure = require( '@aureooms/js-in-situ-sort-spec' ) ;
 // or
-import measure from 'aureooms-js-in-situ-sort-spec' ;
+import measure from '@aureooms/js-in-situ-sort-spec' ;
 ```
