@@ -1,10 +1,10 @@
 
-import sort from "aureooms-js-sort" ;
-import array from "aureooms-js-array" ;
-import random from "aureooms-js-random" ;
-import compare from "aureooms-js-compare" ;
-import * as itertools from "aureooms-js-itertools" ;
-import functools from "aureooms-js-functools" ;
+import sort from "@aureooms/js-sort" ;
+import array from "@aureooms/js-array" ;
+import random from "@aureooms/js-random" ;
+import compare from "@aureooms/js-compare" ;
+import * as itertools from "@aureooms/js-itertools" ;
+import functools from "@aureooms/js-functools" ;
 
 function check ( _test , sortname , method , ctor , n , comparename , compare ) {
 
