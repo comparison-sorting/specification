@@ -1,7 +1,7 @@
 
-import sort from "@aureooms/js-sort" ;
-import array from "@aureooms/js-array" ;
-import random from "@aureooms/js-random" ;
+import { issorted } from "@aureooms/js-sort" ;
+import { iota } from "@aureooms/js-array" ;
+import { shuffle } from "@aureooms/js-random" ;
 import compare from "@aureooms/js-compare" ;
 import * as itertools from "@aureooms/js-itertools" ;
 import functools from "@aureooms/js-functools" ;
@@ -14,14 +14,14 @@ function check ( _test , sortname , method , ctor , n , comparename , compare ) 
 
 		// SETUP ARRAY
 		const a = new ctor(n);
-		array.iota( a, 0, n, 0 );
+		iota( a, 0, n, 0 );
 
 		// SORT ARRAY
-		random.shuffle( a, 0, n );
+		shuffle( a, 0, n );
 		method( compare, a, 0, n );
 
 		// TEST PREDICATE
-		t.is( sort.issorted( compare , a , 0 , n ) , n , "check sorted" ) ;
+		t.is( issorted( compare , a , 0 , n ) , n , "check sorted" ) ;
 		t.is( a.length, n, "check length a" );
 
 	} );

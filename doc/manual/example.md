@@ -1,15 +1,15 @@
 ```js
 import ava from 'ava' ;
 
-import sort from "@aureooms/js-sort" ;
-import array from "@aureooms/js-array" ;
+import * as sort from "@aureooms/js-sort" ;
+import * as array from "@aureooms/js-array" ;
 import search from "@aureooms/js-search" ;
 import heapsort from "@aureooms/js-heapsort" ;
 import quicksort from "@aureooms/js-quicksort" ;
 import partition from "@aureooms/js-partition" ;
-import insitusortspec from "@aureooms/js-in-situ-sort-spec" ;
+import spec from "@aureooms/js-in-situ-sort-spec" ;
 
-insitusortspec.test( ava , [
+spec.test( ava , [
 	[ "heapsort (unary)", heapsort.dary( 1 ) ],
 	[ "heapsort (binary)", heapsort.dary( 2 ) ],
 	[ "heapsort (ternary)", heapsort.dary( 3 ) ],
