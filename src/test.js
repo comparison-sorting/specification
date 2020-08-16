@@ -2,7 +2,7 @@
 import { issorted } from "@aureooms/js-sort" ;
 import { iota } from "@aureooms/js-array" ;
 import { shuffle } from "@aureooms/js-random" ;
-import compare from "@aureooms/js-compare" ;
+import * as compare from "@aureooms/js-compare" ;
 import * as itertools from "@aureooms/js-itertools" ;
 import functools from "@aureooms/js-functools" ;
 
