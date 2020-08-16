@@ -1,4 +1,4 @@
-[js-in-situ-sort-spec](http://aureooms.github.io/js-in-situ-sort-spec)
+[@aureooms/js-in-situ-sort-spec](https://aureooms.github.io/js-in-situ-sort-spec)
 ==
 
 In-place sorting spec for JavaScript. Parent is
