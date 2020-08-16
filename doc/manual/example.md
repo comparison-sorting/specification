@@ -1,3 +1,4 @@
+# Examples
 ```js
 import ava from 'ava' ;
 
