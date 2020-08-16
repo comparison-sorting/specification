@@ -80,5 +80,6 @@
   },
   "files": [
     "lib"
-  ]
+  ],
+  "sideEffects": false
 }
