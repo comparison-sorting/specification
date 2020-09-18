@@ -1,10 +1,9 @@
+export function mock(compare, a, i, j) {
+	const x = Array.prototype.slice.call(a, i, j);
 
-export function mock ( compare , a , i , j ) {
+	x.sort(compare);
 
-	const x = Array.prototype.slice.call( a , i , j ) ;
-
-	x.sort( compare ) ;
-
-	while ( j --> i ) a[j] = x[j-i] ;
-
+	while (j-- > i) {
+		a[j] = x[j - i];
+	}
 }

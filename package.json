@@ -1,6 +1,6 @@
 {
   "name": "@aureooms/js-in-situ-sort-spec",
-  "description": "in place sorting code bricks for JavaScript",
+  "description": "in place sorting specification for JavaScript",
   "version": "8.0.0",
   "author": "Aurélien Ooms <aurelien.ooms@gmail.com>",
   "ava": {
@@ -100,7 +100,8 @@
     "np": "6.5.0",
     "nyc": "^15.1.0",
     "power-assert": "1.6.1",
-    "regenerator-runtime": "0.13.7"
+    "regenerator-runtime": "0.13.7",
+    "xo": "^0.33.1"
   },
   "files": [
     "lib"
@@ -124,11 +125,28 @@
     "cover": "nyc --reporter=lcov npm test",
     "dev": "npm run lint -- --fix && npm run cover -- -- -st --fail-fast",
     "esdoc": "esdoc",
-    "lint": "true",
+    "lint": "xo",
     "prepare": "npm run build",
     "release": "np",
     "test": "ava",
     "travis": "npm run lint && npm run cover"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "xo": {
+    "prettier": true,
+    "ignore": [
+      "lib"
+    ],
+    "plugins": [
+      "unicorn"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "doc/**"
+        ],
+        "env": "browser"
+      }
+    ]
+  }
 }
