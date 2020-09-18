@@ -99,8 +99,8 @@
     "esdoc-standard-plugin": "1.0.0",
     "np": "6.5.0",
     "nyc": "^15.1.0",
-    "regenerator-runtime": "0.13.7",
-    "power-assert": "1.6.1"
+    "power-assert": "1.6.1",
+    "regenerator-runtime": "0.13.7"
   },
   "files": [
     "lib"
@@ -122,12 +122,12 @@
   "scripts": {
     "build": "babel --delete-dir-on-start --env-name production src -d lib",
     "cover": "nyc --reporter=lcov npm test",
+    "dev": "npm run lint -- --fix && npm run cover -- -- -st --fail-fast",
     "esdoc": "esdoc",
+    "lint": "true",
     "prepare": "npm run build",
     "release": "np",
     "test": "ava",
-    "lint": "true",
-    "dev": "npm run lint -- --fix && npm run cover -- -- -st --fail-fast",
     "travis": "npm run lint && npm run cover"
   },
   "sideEffects": false
