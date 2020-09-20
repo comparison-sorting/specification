@@ -1,22 +1,34 @@
 import {issorted} from '@aureooms/js-sort';
-import {iota} from '@aureooms/js-array';
 import {shuffle} from '@aureooms/js-random';
 import {increasing, decreasing} from '@aureooms/js-compare';
-import {exhaust, list, map, product, chain} from '@aureooms/js-itertools';
+import {
+	sorted,
+	range,
+	exhaust,
+	list,
+	map,
+	product,
+	chain
+} from '@aureooms/js-itertools';
 import functools from '@aureooms/js-functools';
+
+const set = (A) => sorted(increasing, A);
 
 const macro = (t, sortname, method, Ctor, n, compare) => {
 	// SETUP ARRAY
-	const a = new Ctor(n);
-	iota(a, 0, n, 0);
+	const data = set(range(n));
+	const a = Ctor.from(data);
 
 	// SORT ARRAY
 	shuffle(a, 0, n);
 	method(compare, a, 0, n);
 
 	// TEST PREDICATE
-	t.is(issorted(compare, a, 0, n), n, 'check sorted');
-	t.is(a.length, n, 'check length a');
+	t.is(n, a.length, 'check length');
+	t.is(undefined, a[-1], 'check left boundary');
+	t.is(undefined, a[n], 'check right boundary');
+	t.is(n, issorted(compare, a, 0, n), 'check sorted');
+	t.deepEqual(data, set(a), 'check data');
 };
 
 macro.title = (title, sortname, _, Ctor, n, compare) =>
