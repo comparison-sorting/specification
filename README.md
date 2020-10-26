@@ -1,8 +1,28 @@
 :notebook_with_decorative_cover: [@aureooms/js-in-situ-sort-spec](https://aureooms.github.io/js-in-situ-sort-spec)
 ==
 
-In-place sorting spec for JavaScript. Parent is
-[aureooms/js-sort](https://github.com/aureooms/js-sort).
+In-place sorting specification for JavaScript.
+See [docs](https://aureooms.github.io/js-in-situ-sort-spec).
+Parent is [@aureooms/js-sort](https://github.com/aureooms/js-sort).
+
+```js
+import ava from 'ava';
+import * as spec from '@aureooms/js-in-situ-sort-spec';
+
+spec.test(
+    ava, // Any testing library exhibiting the same interface as `ava`.
+    [
+        [
+            'mock', // Name of the implementation.
+            (compare, a, i, j) => spec.mock(compare, a, i, j), // Sorting implementation.
+        ]
+    ],
+    {
+        length: [24, 1000], // Array lengths to test.
+        array: [Int8Array], // Array types to test.
+    }
+);
+```
 
 [![License](https://img.shields.io/github/license/aureooms/js-in-situ-sort-spec.svg)](https://raw.githubusercontent.com/aureooms/js-in-situ-sort-spec/master/LICENSE)
 [![Version](https://img.shields.io/npm/v/@aureooms/js-in-situ-sort-spec.svg)](https://www.npmjs.org/package/@aureooms/js-in-situ-sort-spec)
