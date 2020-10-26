@@ -1,4 +1,4 @@
-[@aureooms/js-in-situ-sort-spec](https://aureooms.github.io/js-in-situ-sort-spec)
+:notebook_with_decorative_cover: [@aureooms/js-in-situ-sort-spec](https://aureooms.github.io/js-in-situ-sort-spec)
 ==
 
 In-place sorting spec for JavaScript. Parent is
