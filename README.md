@@ -1,8 +1,8 @@
-:notebook_with_decorative_cover: [@aureooms/js-in-situ-sort-spec](https://aureooms.github.io/js-in-situ-sort-spec)
+:notebook_with_decorative_cover: [@aureooms/js-in-situ-sort-spec](https://make-github-pseudonymous-again.github.io/js-in-situ-sort-spec)
 ==
 
 In-place sorting specification for JavaScript.
-See [docs](https://aureooms.github.io/js-in-situ-sort-spec).
+See [docs](https://make-github-pseudonymous-again.github.io/js-in-situ-sort-spec).
 Parent is [@aureooms/js-sort](https://github.com/aureooms/js-sort).
 
 ```js
@@ -36,5 +36,5 @@ spec.test(
 [![Code maintainability](https://img.shields.io/codeclimate/maintainability/aureooms/js-in-situ-sort-spec.svg)](https://codeclimate.com/github/aureooms/js-in-situ-sort-spec/trends/churn)
 [![Code coverage (cov)](https://img.shields.io/codecov/c/gh/aureooms/js-in-situ-sort-spec/master.svg)](https://codecov.io/gh/aureooms/js-in-situ-sort-spec)
 [![Code technical debt](https://img.shields.io/codeclimate/tech-debt/aureooms/js-in-situ-sort-spec.svg)](https://codeclimate.com/github/aureooms/js-in-situ-sort-spec/trends/technical_debt)
-[![Documentation](https://aureooms.github.io/js-in-situ-sort-spec/badge.svg)](https://aureooms.github.io/js-in-situ-sort-spec/source.html)
+[![Documentation](https://make-github-pseudonymous-again.github.io/js-in-situ-sort-spec/badge.svg)](https://make-github-pseudonymous-again.github.io/js-in-situ-sort-spec/source.html)
 [![Package size](https://img.shields.io/bundlephobia/minzip/@aureooms/js-in-situ-sort-spec)](https://bundlephobia.com/result?p=@aureooms/js-in-situ-sort-spec)
