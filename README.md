@@ -1,13 +1,13 @@
-:notebook_with_decorative_cover: [@aureooms/js-in-situ-sort-spec](https://make-github-pseudonymous-again.github.io/js-in-situ-sort-spec)
+:notebook_with_decorative_cover: [@comparison-sorting/specification](https://comparison-sorting.github.io/specification)
 ==
 
 In-place sorting specification for JavaScript.
-See [docs](https://make-github-pseudonymous-again.github.io/js-in-situ-sort-spec).
+See [docs](https://comparison-sorting.github.io/specification).
 Parent is [@aureooms/js-sort](https://github.com/make-github-pseudonymous-again/js-sort).
 
 ```js
 import ava from 'ava';
-import * as spec from '@aureooms/js-in-situ-sort-spec';
+import * as spec from '@comparison-sorting/specification';
 
 spec.test(
     ava, // Any testing library exhibiting the same interface as `ava`.
@@ -24,17 +24,17 @@ spec.test(
 );
 ```
 
-[![License](https://img.shields.io/github/license/make-github-pseudonymous-again/js-in-situ-sort-spec.svg)](https://raw.githubusercontent.com/make-github-pseudonymous-again/js-in-situ-sort-spec/master/LICENSE)
-[![Version](https://img.shields.io/npm/v/@aureooms/js-in-situ-sort-spec.svg)](https://www.npmjs.org/package/@aureooms/js-in-situ-sort-spec)
-[![Build](https://img.shields.io/travis/make-github-pseudonymous-again/js-in-situ-sort-spec/master.svg)](https://travis-ci.org/make-github-pseudonymous-again/js-in-situ-sort-spec/branches)
-[![Dependencies](https://img.shields.io/david/make-github-pseudonymous-again/js-in-situ-sort-spec.svg)](https://david-dm.org/make-github-pseudonymous-again/js-in-situ-sort-spec)
-[![Dev dependencies](https://img.shields.io/david/dev/make-github-pseudonymous-again/js-in-situ-sort-spec.svg)](https://david-dm.org/make-github-pseudonymous-again/js-in-situ-sort-spec?type=dev)
-[![GitHub issues](https://img.shields.io/github/issues/make-github-pseudonymous-again/js-in-situ-sort-spec.svg)](https://github.com/make-github-pseudonymous-again/js-in-situ-sort-spec/issues)
-[![Downloads](https://img.shields.io/npm/dm/@aureooms/js-in-situ-sort-spec.svg)](https://www.npmjs.org/package/@aureooms/js-in-situ-sort-spec)
+[![License](https://img.shields.io/github/license/comparison-sorting/specification.svg)](https://raw.githubusercontent.com/comparison-sorting/specification/master/LICENSE)
+[![Version](https://img.shields.io/npm/v/@comparison-sorting/specification.svg)](https://www.npmjs.org/package/@comparison-sorting/specification)
+[![Build](https://img.shields.io/travis/comparison-sorting/specification/master.svg)](https://travis-ci.org/comparison-sorting/specification/branches)
+[![Dependencies](https://img.shields.io/david/comparison-sorting/specification.svg)](https://david-dm.org/comparison-sorting/specification)
+[![Dev dependencies](https://img.shields.io/david/dev/comparison-sorting/specification.svg)](https://david-dm.org/comparison-sorting/specification?type=dev)
+[![GitHub issues](https://img.shields.io/github/issues/comparison-sorting/specification.svg)](https://github.com/comparison-sorting/specification/issues)
+[![Downloads](https://img.shields.io/npm/dm/@comparison-sorting/specification.svg)](https://www.npmjs.org/package/@comparison-sorting/specification)
 
-[![Code issues](https://img.shields.io/codeclimate/issues/make-github-pseudonymous-again/js-in-situ-sort-spec.svg)](https://codeclimate.com/github/make-github-pseudonymous-again/js-in-situ-sort-spec/issues)
-[![Code maintainability](https://img.shields.io/codeclimate/maintainability/make-github-pseudonymous-again/js-in-situ-sort-spec.svg)](https://codeclimate.com/github/make-github-pseudonymous-again/js-in-situ-sort-spec/trends/churn)
-[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/make-github-pseudonymous-again/js-in-situ-sort-spec/master.svg)](https://codecov.io/gh/make-github-pseudonymous-again/js-in-situ-sort-spec)
-[![Code technical debt](https://img.shields.io/codeclimate/tech-debt/make-github-pseudonymous-again/js-in-situ-sort-spec.svg)](https://codeclimate.com/github/make-github-pseudonymous-again/js-in-situ-sort-spec/trends/technical_debt)
-[![Documentation](https://make-github-pseudonymous-again.github.io/js-in-situ-sort-spec/badge.svg)](https://make-github-pseudonymous-again.github.io/js-in-situ-sort-spec/source.html)
-[![Package size](https://img.shields.io/bundlephobia/minzip/@aureooms/js-in-situ-sort-spec)](https://bundlephobia.com/result?p=@aureooms/js-in-situ-sort-spec)
+[![Code issues](https://img.shields.io/codeclimate/issues/comparison-sorting/specification.svg)](https://codeclimate.com/github/comparison-sorting/specification/issues)
+[![Code maintainability](https://img.shields.io/codeclimate/maintainability/comparison-sorting/specification.svg)](https://codeclimate.com/github/comparison-sorting/specification/trends/churn)
+[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/comparison-sorting/specification/master.svg)](https://codecov.io/gh/comparison-sorting/specification)
+[![Code technical debt](https://img.shields.io/codeclimate/tech-debt/comparison-sorting/specification.svg)](https://codeclimate.com/github/comparison-sorting/specification/trends/technical_debt)
+[![Documentation](https://comparison-sorting.github.io/specification/badge.svg)](https://comparison-sorting.github.io/specification/source.html)
+[![Package size](https://img.shields.io/bundlephobia/minzip/@comparison-sorting/specification)](https://bundlephobia.com/result?p=@comparison-sorting/specification)

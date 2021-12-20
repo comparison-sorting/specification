@@ -9,7 +9,7 @@ import 'regenerator-runtime/runtime' ;
 
 Then
 ```js
-const measure = require( '@aureooms/js-in-situ-sort-spec' ) ;
+const measure = require( '@comparison-sorting/specification' ) ;
 // or
-import measure from '@aureooms/js-in-situ-sort-spec' ;
+import measure from '@comparison-sorting/specification' ;
 ```

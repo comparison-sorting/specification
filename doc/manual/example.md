@@ -8,7 +8,7 @@ import search from "@aureooms/js-search" ;
 import heapsort from "@aureooms/js-heapsort" ;
 import quicksort from "@aureooms/js-quicksort" ;
 import partition from "@aureooms/js-partition" ;
-import spec from "@aureooms/js-in-situ-sort-spec" ;
+import spec from "@comparison-sorting/specification" ;
 
 spec.test( ava , [
 	[ "heapsort (unary)", heapsort.dary( 1 ) ],

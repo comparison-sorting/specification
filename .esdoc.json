@@ -35,7 +35,7 @@
           "autoPrivate": true
         },
         "brand": {
-          "title": "@aureooms/js-in-situ-sort-spec"
+          "title": "@comparison-sorting/specification"
         },
         "test": {
           "type": "ava",

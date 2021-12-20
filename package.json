@@ -1,8 +1,8 @@
 {
-  "name": "@aureooms/js-in-situ-sort-spec",
+  "name": "@comparison-sorting/specification",
   "description": "in place sorting specification for JavaScript",
   "version": "8.0.0",
-  "author": "Aurélien Ooms <aurelien.ooms@gmail.com>",
+  "author": "make-github-pseudonymous-again",
   "ava": {
     "require": [
       "regenerator-runtime/runtime",
@@ -73,7 +73,7 @@
     }
   },
   "bugs": {
-    "url": "https://github.com/make-github-pseudonymous-again/js-in-situ-sort-spec/issues"
+    "url": "https://github.com/comparison-sorting/specification/issues"
   },
   "dependencies": {
     "@aureooms/js-array": "^4.0.0",
@@ -106,7 +106,7 @@
   "files": [
     "lib"
   ],
-  "homepage": "http://make-github-pseudonymous-again.github.io/js-in-situ-sort-spec",
+  "homepage": "http://comparison-sorting.github.io/specification",
   "keywords": [
     "in situ",
     "javascript",
@@ -117,7 +117,7 @@
   "license": "AGPL-3.0",
   "main": "lib/index.js",
   "repository": {
-    "url": "https://github.com/make-github-pseudonymous-again/js-in-situ-sort-spec.git",
+    "url": "https://github.com/comparison-sorting/specification.git",
     "type": "git"
   },
   "scripts": {
