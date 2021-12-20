@@ -24,9 +24,9 @@ spec.test(
 );
 ```
 
-[![License](https://img.shields.io/github/license/comparison-sorting/specification.svg)](https://raw.githubusercontent.com/comparison-sorting/specification/master/LICENSE)
+[![License](https://img.shields.io/github/license/comparison-sorting/specification.svg)](https://raw.githubusercontent.com/comparison-sorting/specification/main/LICENSE)
 [![Version](https://img.shields.io/npm/v/@comparison-sorting/specification.svg)](https://www.npmjs.org/package/@comparison-sorting/specification)
-[![Build](https://img.shields.io/travis/comparison-sorting/specification/master.svg)](https://travis-ci.org/comparison-sorting/specification/branches)
+[![Build](https://img.shields.io/travis/comparison-sorting/specification/main.svg)](https://travis-ci.org/comparison-sorting/specification/branches)
 [![Dependencies](https://img.shields.io/david/comparison-sorting/specification.svg)](https://david-dm.org/comparison-sorting/specification)
 [![Dev dependencies](https://img.shields.io/david/dev/comparison-sorting/specification.svg)](https://david-dm.org/comparison-sorting/specification?type=dev)
 [![GitHub issues](https://img.shields.io/github/issues/comparison-sorting/specification.svg)](https://github.com/comparison-sorting/specification/issues)
@@ -34,7 +34,7 @@ spec.test(
 
 [![Code issues](https://img.shields.io/codeclimate/issues/comparison-sorting/specification.svg)](https://codeclimate.com/github/comparison-sorting/specification/issues)
 [![Code maintainability](https://img.shields.io/codeclimate/maintainability/comparison-sorting/specification.svg)](https://codeclimate.com/github/comparison-sorting/specification/trends/churn)
-[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/comparison-sorting/specification/master.svg)](https://codecov.io/gh/comparison-sorting/specification)
+[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/comparison-sorting/specification/main.svg)](https://codecov.io/gh/comparison-sorting/specification)
 [![Code technical debt](https://img.shields.io/codeclimate/tech-debt/comparison-sorting/specification.svg)](https://codeclimate.com/github/comparison-sorting/specification/trends/technical_debt)
 [![Documentation](https://comparison-sorting.github.io/specification/badge.svg)](https://comparison-sorting.github.io/specification/source.html)
 [![Package size](https://img.shields.io/bundlephobia/minzip/@comparison-sorting/specification)](https://bundlephobia.com/result?p=@comparison-sorting/specification)
