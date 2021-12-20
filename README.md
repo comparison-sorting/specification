@@ -26,7 +26,7 @@ spec.test(
 
 [![License](https://img.shields.io/github/license/comparison-sorting/specification.svg)](https://raw.githubusercontent.com/comparison-sorting/specification/main/LICENSE)
 [![Version](https://img.shields.io/npm/v/@comparison-sorting/specification.svg)](https://www.npmjs.org/package/@comparison-sorting/specification)
-[![Build](https://img.shields.io/travis/comparison-sorting/specification/main.svg)](https://travis-ci.com/comparison-sorting/specification/branches)
+[![Tests](https://img.shields.io/github/workflow/status/comparison-sorting/specification/ci:test?event=push&label=tests)](https://github.com/comparison-sorting/specification/actions/workflows/ci:test.yml?query=branch:main)
 [![Dependencies](https://img.shields.io/librariesio/github/comparison-sorting/specification.svg)](https://github.com/comparison-sorting/specification/network/dependencies)
 [![GitHub issues](https://img.shields.io/github/issues/comparison-sorting/specification.svg)](https://github.com/comparison-sorting/specification/issues)
 [![Downloads](https://img.shields.io/npm/dm/@comparison-sorting/specification.svg)](https://www.npmjs.org/package/@comparison-sorting/specification)
