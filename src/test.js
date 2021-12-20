@@ -1,20 +1,19 @@
-import {issorted} from '@aureooms/js-sort';
-import {shuffle} from '@aureooms/js-random';
-import {increasing, decreasing} from '@aureooms/js-compare';
-import {
-	sorted,
-	range,
-	exhaust,
-	list,
-	map,
-	product,
-	chain
-} from '@aureooms/js-itertools';
-import functools from '@aureooms/js-functools';
+import {isSorted} from '@comparison-sorting/is-sorted';
+import {shuffle} from '@randomized/random';
+import {sorted} from '@iterable-iterator/sorted';
+import {range} from '@iterable-iterator/range';
+import {exhaust} from '@iterable-iterator/consume';
+import {list} from '@iterable-iterator/list';
+import {map} from '@iterable-iterator/map';
+import {_chain as chain} from '@iterable-iterator/chain';
+import {product} from '@set-theory/cartesian-product';
+import {star} from '@functional-abstraction/functools';
+import increasing from './increasing.js';
+import decreasing from './decreasing.js';
 
 const set = (A) => sorted(increasing, A);
 
-const macro = (t, sortname, method, Ctor, n, compare) => {
+const macro = (t, _sortname, method, Ctor, n, compare) => {
 	// SETUP ARRAY
 	const data = set(range(n));
 	const a = Ctor.from(data);
@@ -27,12 +26,12 @@ const macro = (t, sortname, method, Ctor, n, compare) => {
 	t.is(n, a.length, 'check length');
 	t.is(undefined, a[-1], 'check left boundary');
 	t.is(undefined, a[n], 'check right boundary');
-	t.is(n, issorted(compare, a, 0, n), 'check sorted');
+	t.true(isSorted(compare, a, 0, n), 'check sorted');
 	t.deepEqual(data, set(a), 'check data');
 };
 
 macro.title = (title, sortname, _, Ctor, n, compare) =>
-	`${sortname} (new ${Ctor.name}(${n}), ${compare.name})`;
+	title ?? `${sortname} (new ${Ctor.name}(${n}), ${compare.name})`;
 
 const DEFAULT_COMPARE_FUNCTIONS = [increasing, decreasing];
 
@@ -63,7 +62,7 @@ export function test(_test, algorithms, options) {
 	exhaust(
 		map(
 			(args) => {
-				functools.star((sortname, sort, compare, size, type) => {
+				star((sortname, sort, compare, size, type) => {
 					if (
 						type.BYTES_PER_ELEMENT &&
 						size > 2 ** (type.BYTES_PER_ELEMENT * 8)

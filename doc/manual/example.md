@@ -3,7 +3,7 @@
 import ava from 'ava' ;
 
 import * as sort from "@aureooms/js-sort" ;
-import * as array from "@aureooms/js-array" ;
+import {swap} from "@array-like/swap" ;
 import search from "@aureooms/js-search" ;
 import heapsort from "@aureooms/js-heapsort" ;
 import quicksort from "@aureooms/js-quicksort" ;
@@ -23,7 +23,7 @@ spec.test( ava , [
 	[ "selectionsort", sort.selectionsort ],
 	[ "bubblesort", sort.bubblesort ],
 	[ "fordjohnson" , function ( compare , a , i , j ) {
-		sort._fordjohnson( search.binarysearch )( compare , array.swap , a , i , j ) ;
+		sort._fordjohnson( search.binarysearch )( compare , swap , a , i , j ) ;
 	} ]
 ] ) ;
 ```

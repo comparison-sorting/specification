@@ -3,7 +3,7 @@
 
 In-place sorting specification for JavaScript.
 See [docs](https://comparison-sorting.github.io/specification).
-Parent is [@aureooms/js-sort](https://github.com/make-github-pseudonymous-again/js-sort).
+Parent is [js-sort](https://github.com/make-github-pseudonymous-again/js-sort).
 
 ```js
 import ava from 'ava';
