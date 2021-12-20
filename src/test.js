@@ -46,13 +46,13 @@ const DEFAULT_ARRAY_TYPES = [
 	Int32Array,
 	Uint32Array,
 	Float32Array,
-	Float64Array
+	Float64Array,
 ];
 
 const DEFAULT_OPTIONS = {
 	compare: DEFAULT_COMPARE_FUNCTIONS,
 	length: DEFAULT_LENGTH_VALUES,
-	array: DEFAULT_ARRAY_TYPES
+	array: DEFAULT_ARRAY_TYPES,
 };
 
 const wrap = (l) => map((x) => [x], l[Symbol.iterator] === undefined ? [l] : l);
@@ -79,10 +79,10 @@ export function test(_test, algorithms, options) {
 					algorithms,
 					wrap(options.compare),
 					wrap(options.length),
-					wrap(options.array)
+					wrap(options.array),
 				],
-				1
-			)
-		)
+				1,
+			),
+		),
 	);
 }
