@@ -73,12 +73,12 @@
     "xo": "0.36.1"
   },
   "ava": {
+    "files": [
+      "test/src/**/*"
+    ],
     "require": [
       "regenerator-runtime/runtime",
       "@babel/register"
-    ],
-    "files": [
-      "test/src/**/*"
     ],
     "timeout": "1m"
   },
