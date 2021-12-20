@@ -2,28 +2,21 @@
 ```js
 import ava from 'ava' ;
 
-import * as sort from "@aureooms/js-sort" ;
-import {swap} from "@array-like/swap" ;
-import search from "@aureooms/js-search" ;
-import heapsort from "@aureooms/js-heapsort" ;
-import quicksort from "@aureooms/js-quicksort" ;
-import partition from "@aureooms/js-partition" ;
-import spec from "@comparison-sorting/specification" ;
+import {sort as insertionSort} from '@comparison-sorting/insertion-sort';
+import * as heapSort from '@comparison-sorting/heap-sort' ;
+import * as quickSort from '@comparison-sorting/quick-sort' ;
+import * as partition from '@comparison-sorting/partition' ;
+import * as spec from '@comparison-sorting/specification' ;
 
 spec.test( ava , [
-	[ "heapsort (unary)", heapsort.dary( 1 ) ],
-	[ "heapsort (binary)", heapsort.dary( 2 ) ],
-	[ "heapsort (ternary)", heapsort.dary( 3 ) ],
-	[ "heapsort (4-ary)", heapsort.dary( 4 ) ],
-	[ "heapsort (5-ary)", heapsort.dary( 5 ) ],
-	[ "quicksort (hoare)", quicksort.single( partition.hoare ) ],
-	[ "quicksort (lomuto)", quicksort.single( partition.lomuto ) ],
-	[ "dualpivotquicksort (yaroslavskiy)", quicksort.dual( partition.yaroslavskiy ) ],
-	[ "insertionsort", sort.insertionsort ],
-	[ "selectionsort", sort.selectionsort ],
-	[ "bubblesort", sort.bubblesort ],
-	[ "fordjohnson" , function ( compare , a , i , j ) {
-		sort._fordjohnson( search.binarysearch )( compare , swap , a , i , j ) ;
-	} ]
+	[ 'insertion-sort', insertionSort ],
+	[ 'heap-sort (unary)', heapSort.dary( 1 ) ],
+	[ 'heap-sort (binary)', heapSort.dary( 2 ) ],
+	[ 'heap-sort (ternary)', heapSort.dary( 3 ) ],
+	[ 'heap-sort (4-ary)', heapSort.dary( 4 ) ],
+	[ 'heap-sort (5-ary)', heapSort.dary( 5 ) ],
+	[ 'quick-sort (hoare)', quickSort.single( partition.hoare ) ],
+	[ 'quick-sort (lomuto)', quickSort.single( partition.lomuto ) ],
+	[ 'quick-sort [dual-pivot] (yaroslavskiy)', quickSort.dual( partition.yaroslavskiy ) ],
 ] ) ;
 ```
