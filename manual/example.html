@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <base data-ice="baseUrl" href="../">
-  <title data-ice="title">Manual | @aureooms/js-in-situ-sort-spec</title>
+  <title data-ice="title">Manual | @comparison-sorting/specification</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
   <script src="script/manual.js"></script>
-<script src="./inject/script/0-header.js"></script><link rel="stylesheet" href="./inject/css/0-style.css"><meta name="description" content="in place sorting code bricks for JavaScript"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="@aureooms/js-in-situ-sort-spec"><meta property="twitter:description" content="in place sorting code bricks for JavaScript"></head>
+<link rel="stylesheet" href="./inject/css/0-style.css"><script src="./inject/script/0-header.js"></script><meta name="description" content="Comparison sorting specification for JavaScript"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="@comparison-sorting/specification"><meta property="twitter:description" content="Comparison sorting specification for JavaScript"></head>
 <body class="layout-container manual-root" data-ice="rootContainer">
 
 <header>
@@ -24,7 +24,7 @@
   </span>
     <ul class="search-result"></ul>
   </div>
-<a style="position:relative; top:3px;" href="https://github.com/aureooms/js-in-situ-sort-spec.git"><img width="20px" src="./image/github.png"></a></header>
+<a style="position:relative; top:3px;" href="https://github.com/comparison-sorting/specification"><img width="20px" src="./image/github.png"></a></header>
 
 <nav class="navigation" data-ice="nav"><div class="manual-toc-root">
   
@@ -59,29 +59,22 @@
 
 <div class="content" data-ice="content"><div class="github-markdown" data-ice="content"><h1 id="examples">Examples</h1><pre><code class="lang-js"><code class="source-code prettyprint">import ava from &apos;ava&apos; ;
 
-import * as sort from &quot;@aureooms/js-sort&quot; ;
-import * as array from &quot;@aureooms/js-array&quot; ;
-import search from &quot;@aureooms/js-search&quot; ;
-import heapsort from &quot;@aureooms/js-heapsort&quot; ;
-import quicksort from &quot;@aureooms/js-quicksort&quot; ;
-import partition from &quot;@aureooms/js-partition&quot; ;
-import spec from &quot;@aureooms/js-in-situ-sort-spec&quot; ;
+import {sort as insertionSort} from &apos;@comparison-sorting/insertion-sort&apos;;
+import * as heapSort from &apos;@comparison-sorting/heap-sort&apos; ;
+import * as quickSort from &apos;@comparison-sorting/quick-sort&apos; ;
+import * as partition from &apos;@comparison-sorting/partition&apos; ;
+import * as spec from &apos;@comparison-sorting/specification&apos; ;
 
 spec.test( ava , [
-    [ &quot;heapsort (unary)&quot;, heapsort.dary( 1 ) ],
-    [ &quot;heapsort (binary)&quot;, heapsort.dary( 2 ) ],
-    [ &quot;heapsort (ternary)&quot;, heapsort.dary( 3 ) ],
-    [ &quot;heapsort (4-ary)&quot;, heapsort.dary( 4 ) ],
-    [ &quot;heapsort (5-ary)&quot;, heapsort.dary( 5 ) ],
-    [ &quot;quicksort (hoare)&quot;, quicksort.single( partition.hoare ) ],
-    [ &quot;quicksort (lomuto)&quot;, quicksort.single( partition.lomuto ) ],
-    [ &quot;dualpivotquicksort (yaroslavskiy)&quot;, quicksort.dual( partition.yaroslavskiy ) ],
-    [ &quot;insertionsort&quot;, sort.insertionsort ],
-    [ &quot;selectionsort&quot;, sort.selectionsort ],
-    [ &quot;bubblesort&quot;, sort.bubblesort ],
-    [ &quot;fordjohnson&quot; , function ( compare , a , i , j ) {
-        sort._fordjohnson( search.binarysearch )( compare , array.swap , a , i , j ) ;
-    } ]
+    [ &apos;insertion-sort&apos;, insertionSort ],
+    [ &apos;heap-sort (unary)&apos;, heapSort.dary( 1 ) ],
+    [ &apos;heap-sort (binary)&apos;, heapSort.dary( 2 ) ],
+    [ &apos;heap-sort (ternary)&apos;, heapSort.dary( 3 ) ],
+    [ &apos;heap-sort (4-ary)&apos;, heapSort.dary( 4 ) ],
+    [ &apos;heap-sort (5-ary)&apos;, heapSort.dary( 5 ) ],
+    [ &apos;quick-sort (hoare)&apos;, quickSort.single( partition.hoare ) ],
+    [ &apos;quick-sort (lomuto)&apos;, quickSort.single( partition.lomuto ) ],
+    [ &apos;quick-sort [dual-pivot] (yaroslavskiy)&apos;, quickSort.dual( partition.yaroslavskiy ) ],
 ] ) ;</code>
 </code></pre>
 </div>

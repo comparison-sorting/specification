@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <base data-ice="baseUrl">
-  <title data-ice="title">Home | @aureooms/js-in-situ-sort-spec</title>
+  <title data-ice="title">Home | @comparison-sorting/specification</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
   <script src="script/manual.js"></script>
-<script src="./inject/script/0-header.js"></script><link rel="stylesheet" href="./inject/css/0-style.css"><meta name="description" content="in place sorting code bricks for JavaScript"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="@aureooms/js-in-situ-sort-spec"><meta property="twitter:description" content="in place sorting code bricks for JavaScript"></head>
+<link rel="stylesheet" href="./inject/css/0-style.css"><script src="./inject/script/0-header.js"></script><meta name="description" content="Comparison sorting specification for JavaScript"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="@comparison-sorting/specification"><meta property="twitter:description" content="Comparison sorting specification for JavaScript"></head>
 <body class="layout-container" data-ice="rootContainer">
 
 <header>
@@ -24,32 +24,50 @@
   </span>
     <ul class="search-result"></ul>
   </div>
-<a style="position:relative; top:3px;" href="https://github.com/aureooms/js-in-situ-sort-spec.git"><img width="20px" src="./image/github.png"></a></header>
+<a style="position:relative; top:3px;" href="https://github.com/comparison-sorting/specification"><img width="20px" src="./image/github.png"></a></header>
 
 <nav class="navigation" data-ice="nav"><div>
   <ul>
     
-  <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mock">mock</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-test">test</a></span></span></li>
+  <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-decreasing">decreasing</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-increasing">increasing</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mock">mock</a></span></span></li>
 </ul>
 </div>
 </nav>
 
-<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="-a-href--https---aureooms-github-io-js-in-situ-sort-spec---aureooms-js-in-situ-sort-spec--a-"><a href="https://aureooms.github.io/js-in-situ-sort-spec">@aureooms/js-in-situ-sort-spec</a></h1><p>In-place sorting spec for JavaScript. Parent is
-<a href="https://github.com/aureooms/js-sort">aureooms/js-sort</a>.</p>
-<p><a href="https://raw.githubusercontent.com/aureooms/js-in-situ-sort-spec/master/LICENSE"><img src="https://img.shields.io/github/license/aureooms/js-in-situ-sort-spec.svg" alt="License"></a>
-<a href="https://www.npmjs.org/package/@aureooms/js-in-situ-sort-spec"><img src="https://img.shields.io/npm/v/@aureooms/js-in-situ-sort-spec.svg" alt="Version"></a>
-<a href="https://travis-ci.org/aureooms/js-in-situ-sort-spec/branches"><img src="https://img.shields.io/travis/aureooms/js-in-situ-sort-spec/master.svg" alt="Build"></a>
-<a href="https://david-dm.org/aureooms/js-in-situ-sort-spec"><img src="https://img.shields.io/david/aureooms/js-in-situ-sort-spec.svg" alt="Dependencies"></a>
-<a href="https://david-dm.org/aureooms/js-in-situ-sort-spec?type=dev"><img src="https://img.shields.io/david/dev/aureooms/js-in-situ-sort-spec.svg" alt="Dev dependencies"></a>
-<a href="https://github.com/aureooms/js-in-situ-sort-spec/issues"><img src="https://img.shields.io/github/issues/aureooms/js-in-situ-sort-spec.svg" alt="GitHub issues"></a>
-<a href="https://www.npmjs.org/package/@aureooms/js-in-situ-sort-spec"><img src="https://img.shields.io/npm/dm/@aureooms/js-in-situ-sort-spec.svg" alt="Downloads"></a></p>
-<p><a href="https://codeclimate.com/github/aureooms/js-in-situ-sort-spec/issues"><img src="https://img.shields.io/codeclimate/issues/aureooms/js-in-situ-sort-spec.svg" alt="Code issues"></a>
-<a href="https://codeclimate.com/github/aureooms/js-in-situ-sort-spec/trends/churn"><img src="https://img.shields.io/codeclimate/maintainability/aureooms/js-in-situ-sort-spec.svg" alt="Code maintainability"></a>
-<a href="https://codecov.io/gh/aureooms/js-in-situ-sort-spec"><img src="https://img.shields.io/codecov/c/gh/aureooms/js-in-situ-sort-spec/master.svg" alt="Code coverage (cov)"></a>
-<a href="https://codeclimate.com/github/aureooms/js-in-situ-sort-spec/trends/technical_debt"><img src="https://img.shields.io/codeclimate/tech-debt/aureooms/js-in-situ-sort-spec.svg" alt="Code technical debt"></a>
-<a href="https://aureooms.github.io/js-in-situ-sort-spec/source.html"><img src="https://aureooms.github.io/js-in-situ-sort-spec/badge.svg" alt="Documentation"></a>
-<a href="https://bundlephobia.com/result?p=@aureooms/js-in-situ-sort-spec"><img src="https://img.shields.io/bundlephobia/minzip/@aureooms/js-in-situ-sort-spec" alt="Package size"></a></p>
+<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="-notebook-with-decorative-cover---a-href--https---comparison-sorting-github-io-specification---comparison-sorting-specification--a-">:notebook_with_decorative_cover: <a href="https://comparison-sorting.github.io/specification">@comparison-sorting/specification</a></h1><p>In-place sorting specification for JavaScript.
+See <a href="https://comparison-sorting.github.io/specification">docs</a>.
+Parent is <a href="https://github.com/make-github-pseudonymous-again/js-sort">js-sort</a>.</p>
+<pre><code class="lang-js"><code class="source-code prettyprint">import ava from &apos;ava&apos;;
+import * as spec from &apos;@comparison-sorting/specification&apos;;
+
+spec.test(
+    ava, // Any testing library exhibiting the same interface as `ava`.
+    [
+        [
+            &apos;mock&apos;, // Name of the implementation.
+            (compare, a, i, j) =&gt; spec.mock(compare, a, i, j), // Sorting implementation.
+        ]
+    ],
+    {
+        length: [24, 1000], // Array lengths to test.
+        array: [Int8Array], // Array types to test.
+    }
+);</code>
+</code></pre>
+<p><a href="https://raw.githubusercontent.com/comparison-sorting/specification/main/LICENSE"><img src="https://img.shields.io/github/license/comparison-sorting/specification.svg" alt="License"></a>
+<a href="https://www.npmjs.org/package/@comparison-sorting/specification"><img src="https://img.shields.io/npm/v/@comparison-sorting/specification.svg" alt="Version"></a>
+<a href="https://github.com/comparison-sorting/specification/actions/workflows/ci:test.yml?query=branch:main"><img src="https://img.shields.io/github/workflow/status/comparison-sorting/specification/ci:test?event=push&amp;label=tests" alt="Tests"></a>
+<a href="https://github.com/comparison-sorting/specification/network/dependencies"><img src="https://img.shields.io/librariesio/github/comparison-sorting/specification.svg" alt="Dependencies"></a>
+<a href="https://github.com/comparison-sorting/specification/issues"><img src="https://img.shields.io/github/issues/comparison-sorting/specification.svg" alt="GitHub issues"></a>
+<a href="https://www.npmjs.org/package/@comparison-sorting/specification"><img src="https://img.shields.io/npm/dm/@comparison-sorting/specification.svg" alt="Downloads"></a></p>
+<p><a href="https://codeclimate.com/github/comparison-sorting/specification/issues"><img src="https://img.shields.io/codeclimate/issues/comparison-sorting/specification.svg" alt="Code issues"></a>
+<a href="https://codeclimate.com/github/comparison-sorting/specification/trends/churn"><img src="https://img.shields.io/codeclimate/maintainability/comparison-sorting/specification.svg" alt="Code maintainability"></a>
+<a href="https://codecov.io/gh/comparison-sorting/specification"><img src="https://img.shields.io/codecov/c/gh/comparison-sorting/specification/main.svg" alt="Code coverage (cov)"></a>
+<a href="https://codeclimate.com/github/comparison-sorting/specification/trends/technical_debt"><img src="https://img.shields.io/codeclimate/tech-debt/comparison-sorting/specification.svg" alt="Code technical debt"></a>
+<a href="https://comparison-sorting.github.io/specification/source.html"><img src="https://comparison-sorting.github.io/specification/badge.svg" alt="Documentation"></a>
+<a href="https://bundlephobia.com/result?p=@comparison-sorting/specification"><img src="https://img.shields.io/bundlephobia/minzip/@comparison-sorting/specification" alt="Package size"></a></p>
 </div>
 </div>
 

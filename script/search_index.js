@@ -1,14 +1,20 @@
 window.esdocSearchIndex = [
   [
-    "@aureooms/js-in-situ-sort-spec/src/mock.js~mock",
-    "function/index.html#static-function-mock",
-    "<span>mock</span> <span class=\"search-result-import-path\">@aureooms/js-in-situ-sort-spec/src/mock.js</span>",
+    "@comparison-sorting/specification/src/decreasing.js~decreasing",
+    "function/index.html#static-function-decreasing",
+    "<span>decreasing</span> <span class=\"search-result-import-path\">@comparison-sorting/specification/src/decreasing.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-in-situ-sort-spec/src/test.js~test",
-    "function/index.html#static-function-test",
-    "<span>test</span> <span class=\"search-result-import-path\">@aureooms/js-in-situ-sort-spec/src/test.js</span>",
+    "@comparison-sorting/specification/src/increasing.js~increasing",
+    "function/index.html#static-function-increasing",
+    "<span>increasing</span> <span class=\"search-result-import-path\">@comparison-sorting/specification/src/increasing.js</span>",
+    "function"
+  ],
+  [
+    "@comparison-sorting/specification/src/mock.js~mock",
+    "function/index.html#static-function-mock",
+    "<span>mock</span> <span class=\"search-result-import-path\">@comparison-sorting/specification/src/mock.js</span>",
     "function"
   ],
   [
@@ -294,6 +300,18 @@ window.esdocSearchIndex = [
     "external"
   ],
   [
+    "src/decreasing.js",
+    "file/src/decreasing.js.html",
+    "src/decreasing.js",
+    "file"
+  ],
+  [
+    "src/increasing.js",
+    "file/src/increasing.js.html",
+    "src/increasing.js",
+    "file"
+  ],
+  [
     "src/index.js",
     "file/src/index.js.html",
     "src/index.js",
@@ -303,12 +321,6 @@ window.esdocSearchIndex = [
     "src/mock.js",
     "file/src/mock.js.html",
     "src/mock.js",
-    "file"
-  ],
-  [
-    "src/test.js",
-    "file/src/test.js.html",
-    "src/test.js",
     "file"
   ]
 ]
