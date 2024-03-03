@@ -1,15 +1,16 @@
 import {isSorted} from '@comparison-sorting/is-sorted';
-import {shuffle} from '@randomized/random';
-import {sorted} from '@iterable-iterator/sorted';
-import {range} from '@iterable-iterator/range';
+import {star} from '@functional-abstraction/functools';
+import {_chain as chain} from '@iterable-iterator/chain';
 import {exhaust} from '@iterable-iterator/consume';
 import {list} from '@iterable-iterator/list';
 import {map} from '@iterable-iterator/map';
-import {_chain as chain} from '@iterable-iterator/chain';
+import {range} from '@iterable-iterator/range';
+import {sorted} from '@iterable-iterator/sorted';
+import {shuffle} from '@randomized/random';
 import {product} from '@set-theory/cartesian-product';
-import {star} from '@functional-abstraction/functools';
-import increasing from './increasing.js';
+
 import decreasing from './decreasing.js';
+import increasing from './increasing.js';
 
 const set = (A) => sorted(increasing, A);
 
@@ -62,16 +63,19 @@ export function test(_test, algorithms, options) {
 	exhaust(
 		map(
 			(args) => {
-				star((sortname, sort, compare, size, type) => {
-					if (
-						type.BYTES_PER_ELEMENT &&
-						size > 2 ** (type.BYTES_PER_ELEMENT * 8)
-					) {
-						return;
-					}
+				star(
+					(sortname, sort, compare, size, type) => {
+						if (
+							type.BYTES_PER_ELEMENT &&
+							size > 2 ** (type.BYTES_PER_ELEMENT * 8)
+						) {
+							return;
+						}
 
-					_test(macro, sortname, sort, type, size, compare);
-				}, list(chain(args)));
+						_test(macro, sortname, sort, type, size, compare);
+					},
+					list(chain(args)),
+				);
 			},
 
 			product(
